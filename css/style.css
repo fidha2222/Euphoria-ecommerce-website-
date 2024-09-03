@@ -1,3 +1,169 @@
-h1 {
-    color: red;
+
+
+/* header css */
+header {
+    margin-top: 10px;
+}
+#container {
+    margin: 0 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.logo {
+
+}
+.logo a {
+
+}
+.logo a img {
+    width: 91.16px;
+    height: 45px;
+
+}
+
+.categoryList {
+    
+}
+.categoryList ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    
+}
+.categoryList ul li {
+
+}
+.categoryList ul li a {
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: 500;
+    color: #807D7E;
+    margin: 0 20px;
+}
+.categoryList ul li a:hover {
+    font-weight: 700;
+    color: #3C4242;
+}
+
+.search {
+    padding: 12px, 20px, 12px, 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.search .searchIcon {
+    width: 14.17px;
+    height: 14.17px;
+}
+.search input {
+    border: none;
+    background-color: transparent;
+    margin: 0 10px;
+}
+.search .searchArrow {
+    width: 11.32px;
+    height: 10px;
+}
+
+.cart {
+    
+}
+.cart ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+.cart ul li {
+    
+}
+.cart ul li a {
+    text-decoration: none;
+    padding: 12px;
+    background-color: #F6F6F6; 
+    margin-left: 12px;
+    border-radius: 8px;
+}
+.cart ul li a .wishlist {
+    width: 15px;
+    height: 13.33px;
+    
+}
+.cart ul li a .Account {
+    width: 13.33px;
+    height: 13.33px;
+    
+}
+.cart ul li a .Cart {
+    width: 14.52px;
+    height: 13.33px;
+    
+}
+
+
+/* section deals */
+.deals {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 10px;
+}
+.HighCoziness {
+    background-image: url('../images/bg-2.jpg');
+    width: 500px;
+    height: 300px;
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-right: 10px;
+    float: right;
+}
+.SummerStyle {
+    background-image: url('../images/bg-3.jpg');
+    width: 500px;
+    height: 300px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/* section NewArrival */
+.NewArrival {
+
+}
+.NewArrival h2 {
+    
+}
+.NewArrival .list {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+
+}
+.NewArrival .list .card {
+    margin-left: 10px;
+}
+.NewArrival .list .card img {
+    
+}
+.NewArrival .list .card h4 {
+    
+}
+
+
+/* section fashion */
+.fashion {
+
+}
+.left {
+    background-image: url('../images/bg-4.jpg');
+    width: 500px;
+    height: 300px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
