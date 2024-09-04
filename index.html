@@ -12,11 +12,11 @@
     <!-- Header -->
     <header>
         <div id="mainContainer">
-            <div id="container">
+            <div id="headerContainer">
                 <div class="logo">
                     <a href="index.html"><img src="icons/Logo.svg" alt="Logo"></a>
                 </div>
-                <div class="categoryList">
+                <nav>
                     <ul>
                         <li><a href="">Shop</a></li>
                         <li><a href="">Men</a></li>
@@ -24,11 +24,13 @@
                         <li><a href="">Combos</a></li>
                         <li><a href="">Jogger</a></li>
                     </ul>
-                </div>
+                </nav>
                 <div class="search">
-                    <img class="searchIcon" src="icons/search.svg" alt="">
-                    <input type="text" placeholder="Search...">
-                    <a href=""><img class="searchArrow" src="icons/arrow-right.svg" alt=""></a>
+                    <div class="searchContainer">
+                        <img class="searchIcon" src="icons/search.svg" alt="">
+                        <input type="text" placeholder="Search...">
+                        <a href=""><img class="searchArrow" src="icons/arrow-right.svg" alt=""></a>
+                    </div>
                 </div>
                 <div class="cart">
                     <ul>
@@ -40,6 +42,24 @@
             </div>
         </div>
     </header>
+
+    <!--Hero Section-->
+    <section id="hero">
+        <div id="mainContainer">
+            <div id="heroContainer">
+                <div class="left">
+                    <img style="width: 30px; height: 30px;" src="icons/left-arrow-bold.svg" alt="">
+                    <div class="container">
+                        <h4>T-shirt / Tops</h4>
+                        <h1>Summer <br>Value Pack</h1>
+                        <h4>cool / colorful / comfy</h4>
+                        <button>Shop Now</button>
+                    </div>
+                </div>
+                <img style="width: 30px; height: 30px;" src="icons/right-arrow-bold.svg" alt="">
+            </div>
+        </div>
+    </section>
 
     <!-- Section Deals -->
      <section id="deals">
@@ -66,45 +86,46 @@
      </section>
 
      <!-- Section NewArrival -->
-        <section class="NewArrival">
+        <section class="newarrival">
             <div id="mainContainer">
-                <h2 style="font-size: 28px; font-weight: 700;">New Arrivals</h2>
-                <div class="bottom">
-                    <div class="arrow">
-                        <a href="#">
-                            <img src="icons/arrow-left.svg" alt="">
-                        </a>
-                    </div>
-                    <ul>
-                        <li>
-                            <img src="images/img-1.jpg" alt="Product 1">
-                            <h4>Product 1</h4>
-                        </li>
-                        <li>
-                            <img src="images/img-3.jpg" alt="Product 2">
-                            <h4>Product 2</h4>
-                        </li>
-                        <li>
-                            <img src="images/img-4.jpg" alt="Product 3">
-                            <h4>Product 3</h4>
-                        </li>
-                        <li>
-                            <img src="images/img-2.jpg" alt="Product 4">
-                            <h4>Product 4</h4>
-                        </li>
-                    </ul>
-                    <div class="arrow">
-                        <a href="#">
-                            <img src="icons/arrow-right.svg" alt="">
-                        </a>
+                <div id="newArrivalContainer">
+                    <h2 style="font-size: 34px; font-weight: 700; color: #3C4242;">New Arrivals</h2>
+                    <div class="bottom">
+                        <div class="arrow">
+                            <a href="#">
+                                <img src="icons/arrow-left.svg" alt="">
+                            </a>
+                        </div>
+                        <ul>
+                            <li>
+                                <img src="images/img-1.jpg" alt="Product 1">
+                                <h4 style="font-size: 20px; font-weight: 700; color: #3C4242;">Knitted Joggers</h4>
+                            </li>
+                            <li>
+                                <img src="images/img-3.jpg" alt="Product 2">
+                                <h4 style="font-size: 20px; font-weight: 700; color: #3C4242;">Full Sleeve</h4>
+                            </li>
+                            <li>
+                                <img src="images/img-4.jpg" alt="Product 3">
+                                <h4 style="font-size: 20px; font-weight: 700; color: #3C4242;">Active T-Shirts</h4>
+                            </li>
+                            <li>
+                                <img src="images/img-2.jpg" alt="Product 4">
+                                <h4 style="font-size: 20px; font-weight: 700; color: #3C4242;">Urban Shirts</h4>
+                            </li>
+                        </ul>
+                        <div class="arrow">
+                            <a href="#">
+                                <img src="icons/arrow-right.svg" alt="">
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
-
         <!-- Sectiom fashion -->
-        <section class="fashion">
+        <section id="fashion">
             <div id="mainContainer">
                 <div id="fashionContainer">
                     <div class="left">
@@ -112,23 +133,22 @@
                         <h4>In our journey to improve everyday fashion, <br>euphoria presents EVERYDAY wear range - <br>Comfortable & Affordable fashion 24/7</h4>
                         <button>
                                 <img style="width: 20px; height: 20px;" src="icons/cart-1.svg" alt="">
-                                <p>Shop Now</p>
+                                <p style="font-size: 18px; font-weight: 600; margin: 0 10px;">Shop Now</p>
                                 <img style="width: 20px; height: 20px;" src="icons/arrow-right.svg" alt="">
                         </button>
                     </div>
                     <div class="right">
-                        <img src="images/bg-5.jpg" alt="">
+                        <img style="height: 100vh;" src="images/bg-5.jpg" alt="">
                     </div>
                 </div>
             </div>
         </section>
 
-
         <!-- Section Men -->
          <section id="men">
             <div id="mainContainer">
                 <div id="top">
-                    <h2 style="font-size: 28px; font-weight: 700;">Categories for Men</h2>
+                    <h2 style="font-size: 34px; font-weight: 700; color: #3C4242;">Categories for Men</h2>
                 </div>
                 <div id="bottom">
                     <ul class="top">
@@ -136,48 +156,56 @@
                             <img src="images/img-5.jpg" alt="">
                             <div class="description">
                                 <div class="left">
-                                    <h4>Men's T-Shirts</h4>
-                                    <h6></h6>
+                                    <h4 style="font-size: 18px; font-weight: 700; color: #2A2F2F;">Shirts</h4>
+                                    <h6 style="font-size: 14px; font-weight: 700; color: #7F7F7F;">Explore Now</h6>
                                 </div>
-                                <div class="right">
-                                    <img src="icons/arrow-right.svg" alt="">
-                                </div>
+                                <a href="#">
+                                    <div class="right">
+                                        <img src="icons/arrow-right.svg" alt="">
+                                    </div>
+                                </a>
                             </div>
                         </li>
                         <li>
                             <img src="images/img-6.jpg" alt="">
                             <div class="description">
                                 <div class="left">
-                                    <h4>Men's T-Shirts</h4>
-                                    <h6></h6>
+                                    <h4 style="font-size: 18px; font-weight: 700; color: #2A2F2F;">Printed T-Shirts</h4>
+                                    <h6 style="font-size: 14px; font-weight: 700; color: #7F7F7F;">Explore Now</h6>
                                 </div>
-                                <div class="right">
-                                    <img src="icons/arrow-right.svg" alt="">
-                                </div>
+                                <a href="#">
+                                    <div class="right">
+                                        <img src="icons/arrow-right.svg" alt="">
+                                    </div>
+                                </a>
                             </div>
                         </li>
                         <li>
                             <img src="images/img-7.jpg" alt="">
                             <div class="description">
                                 <div class="left">
-                                    <h4>Men's T-Shirts</h4>
-                                    <h6></h6>
+                                    <h4 style="font-size: 18px; font-weight: 700; color: #2A2F2F;">Plain T-Shirt</h4>
+                                    <h6 style="font-size: 14px; font-weight: 700; color: #7F7F7F;">Explore Now</h6>
                                 </div>
-                                <div class="right">
-                                    <img src="icons/arrow-right.svg" alt="">
-                                </div>
+                                <a href="#">
+                                    <div class="right">
+                                        <img src="icons/arrow-right.svg" alt="">
+                                    </div>
+                                </a>
                             </div>
                         </li>
                         <li>
                             <img src="images/img-8.jpg" alt="">
                             <div class="description">
                                 <div class="left">
-                                    <h4>Men's T-Shirts</h4>
-                                    <h6></h6>
+                                    <h4 style="font-size: 18px; font-weight: 700; color: #2A2F2F;">Polo T-Shirt</h4>
+                                    <h6 style="font-size: 14px; font-weight: 700; color: #7F7F7F;">Explore Now</h6>
                                 </div>
-                                <div class="right">
-                                    <img src="icons/arrow-right.svg" alt="">
-                                </div>
+                                <a href="#">
+                                    <div class="right">
+                                        <img src="icons/arrow-right.svg" alt="">
+                                    </div>
+                                </a>
                             </div>
                         </li>
                     </ul>
@@ -186,48 +214,56 @@
                             <img src="images/img-9.jpg" alt="">
                             <div class="description">
                                 <div class="left">
-                                    <h4>Men's T-Shirts</h4>
-                                    <h6></h6>
+                                    <h4 style="font-size: 18px; font-weight: 700; color: #2A2F2F;">Hoodies & Sweetshirt</h4>
+                                    <h6 style="font-size: 14px; font-weight: 700; color: #7F7F7F;">Explore Now</h6>
                                 </div>
-                                <div class="right">
-                                    <img src="icons/arrow-right.svg" alt="">
-                                </div>
+                                <a href="#">
+                                    <div class="right">
+                                        <img src="icons/arrow-right.svg" alt="">
+                                    </div>
+                                </a>
                             </div>
                         </li>
                         <li>
                             <img src="images/img-10.jpg" alt="">
                             <div class="description">
                                 <div class="left">
-                                    <h4>Men's T-Shirts</h4>
-                                    <h6></h6>
+                                    <h4 style="font-size: 18px; font-weight: 700; color: #2A2F2F;">Jeans</h4>
+                                    <h6 style="font-size: 14px; font-weight: 700; color: #7F7F7F;">Explore Now</h6>
                                 </div>
-                                <div class="right">
-                                    <img src="icons/arrow-right.svg" alt="">
-                                </div>
+                                <a href="#">
+                                    <div class="right">
+                                        <img src="icons/arrow-right.svg" alt="">
+                                    </div>
+                                </a>
                             </div>
                         </li>
                         <li>
-                            <img src="images/img-1.jpg" alt="">
+                            <img src="images/img-7.jpg" alt="">
                             <div class="description">
                                 <div class="left">
-                                    <h4>Men's T-Shirts</h4>
-                                    <h6></h6>
+                                    <h4 style="font-size: 18px; font-weight: 700; color: #2A2F2F;">Activewear</h4>
+                                    <h6 style="font-size: 14px; font-weight: 700; color: #7F7F7F;">Explore Now</h6>
                                 </div>
-                                <div class="right">
-                                    <img src="icons/arrow-right.svg" alt="">
-                                </div>
+                                <a href="#">
+                                    <div class="right">
+                                        <img src="icons/arrow-right.svg" alt="">
+                                    </div>
+                                </a>
                             </div>
                         </li>
                         <li>
                             <img src="images/img-11.jpg" alt="">
                             <div class="description">
                                 <div class="left">
-                                    <h4>Men's T-Shirts</h4>
-                                    <h6></h6>
+                                    <h4 style="font-size: 18px; font-weight: 700; color: #2A2F2F;">Boxers</h4>
+                                    <h6 style="font-size: 14px; font-weight: 700; color: #7F7F7F;">Explore Now</h6>
                                 </div>
-                                <div class="right">
-                                    <img src="icons/arrow-right.svg" alt="">
-                                </div>
+                                <a href="#">
+                                    <div class="right">
+                                        <img src="icons/arrow-right.svg" alt="">
+                                    </div>
+                                </a>
                             </div>
                         </li>
                     </ul>
@@ -235,12 +271,11 @@
             </div>
          </section>
 
-
          <!-- Section for women -->
          <section id="women">
             <div id="mainContainer">
                 <div id="top">
-                    <h2 style="font-size: 28px; font-weight: 700;">Categories for Women</h2>
+                    <h2 style="font-size: 34px; font-weight: 700; color: #3C4242;">Categories for Women</h2>
                 </div>
                 <div id="bottom">
                     <ul>
@@ -248,48 +283,56 @@
                             <img src="images/img-12.jpg" alt="">
                             <div class="description">
                                 <div class="left">
-                                    <h4>Men's T-Shirts</h4>
-                                    <h6></h6>
+                                    <h4 style="font-size: 18px; font-weight: 700; color: #2A2F2F;">Hoodies & Sweetshirt</h4>
+                                    <h6 style="font-size: 14px; font-weight: 700; color: #7F7F7F;">Explore Now</h6>
                                 </div>
-                                <div class="right">
-                                    <img src="icons/arrow-right.svg" alt="">
-                                </div>
+                                <a href="#">
+                                    <div class="right">
+                                        <img src="icons/arrow-right.svg" alt="">
+                                    </div>
+                                </a>
                             </div>
                         </li>
                         <li>
                             <img src="images/img-13.jpg" alt="">
                             <div class="description">
                                 <div class="left">
-                                    <h4>Men's T-Shirts</h4>
-                                    <h6></h6>
+                                    <h4 style="font-size: 18px; font-weight: 700; color: #2A2F2F;">Coats & Parkas</h4>
+                                    <h6 style="font-size: 14px; font-weight: 700; color: #7F7F7F;">Explore Now</h6>
                                 </div>
-                                <div class="right">
-                                    <img src="icons/arrow-right.svg" alt="">
-                                </div>
+                                <a href="#">
+                                    <div class="right">
+                                        <img src="icons/arrow-right.svg" alt="">
+                                    </div>
+                                </a>
                             </div>
                         </li>
                         <li>
                             <img src="images/img-14.jpg" alt="">
                             <div class="description">
                                 <div class="left">
-                                    <h4>Men's T-Shirts</h4>
-                                    <h6></h6>
+                                    <h4 style="font-size: 18px; font-weight: 700; color: #2A2F2F;">Tees & T-Shirt</h4>
+                                    <h6 style="font-size: 14px; font-weight: 700; color: #7F7F7F;">Explore Now</h6>
                                 </div>
-                                <div class="right">
-                                    <img src="icons/arrow-right.svg" alt="">
-                                </div>
+                                <a href="#">
+                                    <div class="right">
+                                        <img src="icons/arrow-right.svg" alt="">
+                                    </div>
+                                </a>
                             </div>
                         </li>
                         <li>
                             <img src="images/img-15.jpg" alt="">
                             <div class="description">
                                 <div class="left">
-                                    <h4>Men's T-Shirts</h4>
-                                    <h6></h6>
+                                    <h4 style="font-size: 18px; font-weight: 700; color: #2A2F2F;">Boxers</h4>
+                                    <h6 style="font-size: 14px; font-weight: 700; color: #7F7F7F;">Explore Now</h6>
                                 </div>
-                                <div class="right">
-                                    <img src="icons/arrow-right.svg" alt="">
-                                </div>
+                                <a href="#">
+                                    <div class="right">
+                                        <img src="icons/arrow-right.svg" alt="">
+                                    </div>
+                                </a>
                             </div>
                         </li>
                     </ul>
@@ -300,9 +343,9 @@
         <!-- Brand Deals -->
          <section id="brand">
             <div id="mainContainer">
-                <div class="container">
+                <div id="brandContainer">
                     <div class="top">
-                        <h1 style="font-size: 50px;">Top Brand Deals</h1>
+                        <h1>Top Brand Deals</h1>
                         <h4>Up To <span>60%</span> off on brands</h4>
                     </div>
                     <div class="bottom">
@@ -318,126 +361,133 @@
             </div>
          </section>
 
-
         <!-- Section for Limelight -->
         <section id="limelight">
             <div id="mainContainer">
-                <div id="top">
-                    <h2 style="font-size: 28px; font-weight: 700;">In The Limelight</h2>
-                </div>
-                <div id="bottom">
-                    <ul>
-                        <li>
-                            <img src="images/img-16.jpg" alt="">
-                            <div class="description">
-                                <div class="left">
-                                    <h4>Men's T-Shirts</h4>
-                                    <h6></h6>
+                <div id="limeLightContainer">
+                    <div id="top">
+                        <h2 style="font-size: 34px; font-weight: 700; color: #3C4242;">In The Limelight</h2>
+                    </div>
+                    <div id="bottom">
+                        <ul>
+                            <li>
+                                <img src="images/img-16.jpg" alt="">
+                                <div class="description">
+                                    <div class="left">
+                                        <h4 style="font-size: 18px; font-weight: 700; color: #2A2F2F;">Black Sweatshirt with ....</h4>
+                                        <h6 style="font-size: 14px; font-weight: 700; color: #7F7F7F;">Jhanvi’s Brand</h6>
+                                    </div>
+                                    <a href="#">
+                                        <div class="right">
+                                            <h6 style="font-size: 14px; font-weight: 700; color: #3C4242;">$123.00</h6>
+                                        </div>
+                                    </a>
                                 </div>
-                                <div class="right">
-                                    <h6>Rate</h6>
+                            </li>
+                            <li>
+                                <img src="images/img-17.jpg" alt="">
+                                <div class="description">
+                                    <div class="left">
+                                        <h4 style="font-size: 18px; font-weight: 700; color: #2A2F2F;">line Pattern Black H...</h4>
+                                        <h6 style="font-size: 14px; font-weight: 700; color: #7F7F7F;">AS’s  Brand</h6>
+                                    </div>
+                                    <a href="#">
+                                        <div class="right">
+                                            <h6 style="font-size: 14px; font-weight: 700; color: #3C4242;">$37.00</h6>
+                                        </div>
+                                    </a>
                                 </div>
-                            </div>
-                        </li>
-                        <li>
-                            <img src="images/img-17.jpg" alt="">
-                            <div class="description">
-                                <div class="left">
-                                    <h4>Men's T-Shirts</h4>
-                                    <h6></h6>
+                            </li>
+                            <li>
+                                <img src="images/img-18.jpg" alt="">
+                                <div class="description">
+                                    <div class="left">
+                                        <h4 style="font-size: 18px; font-weight: 700; color: #2A2F2F;">Black Shorts</h4>
+                                        <h6 style="font-size: 14px; font-weight: 700; color: #7F7F7F;">MM’s  Brand</h6>
+                                    </div>
+                                    <a href="#">
+                                        <div class="right">
+                                            <h6 style="font-size: 14px; font-weight: 700; color: #3C4242;">$37.00</h6>
+                                        </div>
+                                    </a>
                                 </div>
-                                <div class="right">
-                                    <h6>Rate</h6>
+                            </li>
+                            <li>
+                                <img src="images/img-19.jpg" alt="">
+                                <div class="description">
+                                    <div class="left">
+                                        <h4 style="font-size: 18px; font-weight: 700; color: #2A2F2F;">Levender Hoodie with ....</h4>
+                                        <h6 style="font-size: 14px; font-weight: 700; color: #7F7F7F;">Nike’s  Brand</h6>
+                                    </div>
+                                    <a href="#">
+                                        <div class="right">
+                                            <h6 style="font-size: 14px; font-weight: 700; color: #3C4242;">$119.00</h6>
+                                        </div>
+                                    </a>
                                 </div>
-                            </div>
-                        </li>
-                        <li>
-                            <img src="images/img-18.jpg" alt="">
-                            <div class="description">
-                                <div class="left">
-                                    <h4>Men's T-Shirts</h4>
-                                    <h6></h6>
-                                </div>
-                                <div class="right">
-                                    <h6>Rate</h6>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <img src="images/img-19.jpg" alt="">
-                            <div class="description">
-                                <div class="left">
-                                    <h4>Men's T-Shirts</h4>
-                                    <h6></h6>
-                                </div>
-                                <div class="right">
-                                    <h6>Rate</h6>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
          </section>
-
 
          <!-- Section for feedback -->
         <section id="feedback">
             <div id="mainContainer">
-                <div id="top">
-                    <h2 style="font-size: 28px; font-weight: 700;">Feedback</h2>
-                </div>
-                <div id="bottom">
-                    <ul class="feedback">
-                        <li>
-                            <div class="top">
-                                <img src="icons/span-1.svg" alt=""> 
-                                <div class="rating">
-                                    <span><img src="icons/star.svg" alt=""></span>
-                                    <span><img src="icons/star.svg" alt=""></span>
-                                    <span><img src="icons/star.svg" alt=""></span>
-                                    <span><img src="icons/star.svg" alt=""></span>
-                                    <span><img src="icons/star.svg" alt=""></span>
+                <div id="feedbackContainer">
+                    <div id="top">
+                        <h2 style="font-size: 34px; font-weight: 700;">Feedback</h2>
+                    </div>
+                    <div id="bottom">
+                        <ul>
+                            <li>
+                                <div class="top">
+                                    <img src="icons/span-1.svg" alt=""> 
+                                    <div class="rating">
+                                        <span><img src="icons/star.svg" alt=""></span>
+                                        <span><img src="icons/star.svg" alt=""></span>
+                                        <span><img src="icons/star.svg" alt=""></span>
+                                        <span><img src="icons/star.svg" alt=""></span>
+                                        <span><img src="icons/star.svg" alt=""></span>
+                                    </div>
                                 </div>
-                            </div>
-                            <h3>Floyd Miles</h3>
-                            <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. <br>Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
-                        </li>
-                        <li>
-                            <div class="top">
-                                <img src="icons/span-2.svg" alt=""> 
-                                <div class="rating">
-                                    <span><img src="icons/star.svg" alt=""></span>
-                                    <span><img src="icons/star.svg" alt=""></span>
-                                    <span><img src="icons/star.svg" alt=""></span>
-                                    <span><img src="icons/star.svg" alt=""></span>
-                                    <span><img src="icons/star.svg" alt=""></span>
+                                <h3>Floyd Miles</h3>
+                                <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. <br>Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                            </li>
+                            <li>
+                                <div class="top">
+                                    <img src="icons/span-2.svg" alt=""> 
+                                    <div class="rating">
+                                        <span><img src="icons/star.svg" alt=""></span>
+                                        <span><img src="icons/star.svg" alt=""></span>
+                                        <span><img src="icons/star.svg" alt=""></span>
+                                        <span><img src="icons/star.svg" alt=""></span>
+                                        <span><img src="icons/star.svg" alt=""></span>
+                                    </div>
                                 </div>
-                            </div>
-                            <h3>Ronald Richard</h3>
-                            <p>ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
-                        </li>
-                        <li>
-                            <div class="top">
-                                <img src="icons/span-3.svg" alt=""> 
-                                <div class="rating">
-                                    <span><img src="icons/star.svg" alt=""></span>
-                                    <span><img src="icons/star.svg" alt=""></span>
-                                    <span><img src="icons/star.svg" alt=""></span>
-                                    <span><img src="icons/star.svg" alt=""></span>
-                                    <span><img src="icons/star.svg" alt=""></span>
+                                <h3>Ronald Richard</h3>
+                                <p>ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                            </li>
+                            <li>
+                                <div class="top">
+                                    <img src="icons/span-3.svg" alt=""> 
+                                    <div class="rating">
+                                        <span><img src="icons/star.svg" alt=""></span>
+                                        <span><img src="icons/star.svg" alt=""></span>
+                                        <span><img src="icons/star.svg" alt=""></span>
+                                        <span><img src="icons/star.svg" alt=""></span>
+                                        <span><img src="icons/star.svg" alt=""></span>
+                                    </div>
                                 </div>
-                            </div>
-                            <h3>Savannah Nguyen</h3>
-                            <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. <br>Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
-                        </li>
-                    </ul>
+                                <h3>Savannah Nguyen</h3>
+                                <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. <br>Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
          </section>
-
-
-
         <!-- footer -->
          <footer>
             <div id="mainContainer">
@@ -594,3 +644,5 @@
          </footer>
 </body>
 </html>
+
+
