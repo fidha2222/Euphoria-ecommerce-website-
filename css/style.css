@@ -1,3 +1,8 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 a {
     text-decoration: none;
 }
@@ -47,6 +52,16 @@ header {
     font-weight: 700;
     color: #3C4242;
 }
+.toggle-button {
+    background-color: #828787;
+    padding: 10px;
+    border-radius: 12px;
+}
+.toggle-button h4 {
+    margin-right: 10px;
+    font-size: 18px; 
+    color: #ffffff;
+}
 .search {
     display: flex;
     flex-direction: row;
@@ -64,11 +79,11 @@ header {
 .search input {
     border: none;
     background-color: transparent;
-    margin: 0 10px;
+    margin: 0 6px;
 }
 .search .searchArrow {
-    width: 11.32px;
-    height: 10px;
+    width: 10px;
+    height: 8px;
 }
 #headerContainer .cart {
 
@@ -102,7 +117,7 @@ header {
     justify-content: space-between;
     align-items: center;
     position: relative;
-    top: 130px;  
+    top: 180px;  
 }
 #heroContainer .left {
     display: flex;
@@ -149,7 +164,7 @@ header {
     width: 100%;
     height: 400px;
     border-radius: 12px;
-    background-position: 100% 0;
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     margin-right: 30px;
@@ -189,6 +204,12 @@ header {
     display: flex;
     flex-direction: column;
 }
+#newArrivalContainer h2 {
+    font-size: 34px; 
+    font-weight: 700; 
+    color: #3C4242; 
+    margin-bottom: 30px;
+}
 #newArrivalContainer .bottom {
     display: flex;
     flex-direction: row;
@@ -202,11 +223,18 @@ header {
     align-items: center;
 }
 #newArrivalContainer .bottom ul li {
-    margin-right: 30px;
+    margin-right: 15px;
+    margin-left: 15px;
 }
 #newArrivalContainer .bottom ul li img {
     width: 100%;
     height: 300px;
+}
+#newArrivalContainer .bottom ul li h4 {
+    font-size: 20px; 
+    font-weight: 700; 
+    color: #3C4242;
+    margin-top: 10px;
 }
 
 
@@ -264,12 +292,21 @@ header {
 #fashionContainer .right {
     flex: .5;
 }
+#fashionContainer .right img {
+    flex: 1;
+}
 
 
 /* men style */
 
 #men {
-
+    margin-bottom: 30px;
+} 
+#top h2 {
+    font-size: 34px; 
+    font-weight: 700; 
+    color: #3C4242; 
+    margin-bottom: 30px;
 }
 #bottom {
     width: 100%;
@@ -278,7 +315,7 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     flex: 1;
 }
 #bottom ul li {
@@ -300,15 +337,21 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 0 15px;
-    position: relative;
-    top: -25px;
 }
 #bottom ul li .description .left {
     
 }
+#bottom ul li .description .left h4 {
+    font-size: 18px; 
+    font-weight: 700; 
+    color: #2A2F2F;
+    margin-bottom: 5px;
+}
 #bottom ul li .description .left h6 {
-    position: relative;
-    top: -25px;
+    font-size: 14px; 
+    font-weight: 700; 
+    color: #7F7F7F;
+    margin-bottom: 20px;
 }
 #bottom ul li .description a {
 
@@ -320,6 +363,31 @@ header {
     width: 20px;
     height: 20px;
 }
+
+
+/* women */
+#women {
+    margin-bottom: 30px;
+}
+#women #top h2 {
+    font-size: 34px; 
+    font-weight: 700; 
+    color: #3C4242; 
+    margin-bottom: 30px;
+}
+#women #bottom ul li .description .left h4 {
+    font-size: 18px; 
+    font-weight: 700; 
+    color: #2A2F2F;
+    margin-bottom: 5px;
+}
+#women #bottom ul li .description .left h6 {
+    font-size: 14px; 
+    font-weight: 700; 
+    color: #7F7F7F;
+    margin-bottom: 20px;
+}
+
 
 /* brand style */
 
@@ -334,6 +402,7 @@ header {
     text-align: center;
     background-color: #3C4242; 
     border-radius: 12px;
+    padding: 20px;
 }
 #brandContainer .top {
     
@@ -341,15 +410,16 @@ header {
 #brandContainer .top h1 {
     font-size: 50px;
     color: #fff;
+    margin-bottom: 30px;
 }
 #brandContainer .top h4 {
     color: #fff;
     font-size: 20px;
+    margin-bottom: 50px;
 }
 #brandContainer .top h4 span {
     color: #FBD103;
     font-size: 20px;
-
 }
 #brandContainer .bottom {
     margin-bottom: 30px;
@@ -361,11 +431,11 @@ header {
     align-items: center;
 }
 #brandContainer .bottom ul li {
-    
+
 }
 #brandContainer .bottom ul li img {
-    height: 40px;
-    width: 130px;
+    height: 80px;
+    width: 150px;
     margin-right: 20px;
     background-color: #fff;
     padding: 20px;
@@ -373,17 +443,39 @@ header {
 }
 
 
+
 /* limelight style */
 
 #limelight {
-    padding: 60px 0;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
-#limeLightContainer {
-
+#limeLightContainer #top h2 {
+    font-size: 34px;
+    font-weight: 700;
+    color: #3C4242;
+    margin-bottom: 30px;
+} 
+#limeLightContainer #bottom ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+}
+#limeLightContainer #bottom ul li .description .left h4 {
+    font-size: 18px; 
+    font-weight: 700; 
+    color: #2A2F2F;
+}
+#limeLightContainer #bottom ul li .description .left h6 {
+    font-size: 14px; 
+    font-weight: 700; 
+    color: #3C4242;
 }
 #limeLightContainer #bottom ul li .description a .right {
     position: relative;
     top: -20px;
+
 }
 #limeLightContainer #bottom ul li .description a .right h6 {
     background-color: #F6F6F6;
@@ -395,12 +487,17 @@ header {
 /* feedback style */
 
 #feedback {
-    padding: 60px 0;
+    margin-bottom: 50px;
 }
 #feedbackContainer {
     display: flex;
-    flex-direction: column;
-    
+    flex-direction: column;   
+}
+#feedbackContainer #top h2 {
+    font-size: 34px;
+    font-weight: 700;
+    color: #3C4242;
+    margin-bottom: 30px;
 }
 #feedbackContainer #bottom ul {
     display: flex;
@@ -413,6 +510,14 @@ header {
     border: 1px solid #828787;
     border-radius: 10px;
     padding: 20px;
+}
+#feedbackContainer #bottom ul li h3 {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+#feedbackContainer #bottom ul li p {
+    font-size: 16px;
 }
 #feedbackContainer #bottom ul li .top {
     display: flex;
@@ -438,5 +543,321 @@ footer {
     background-color: #3C4242;
     padding: 30px 0;
     color: #FFFFFF;
+}
+footer #top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+  
+}
+footer #top div {
+    margin-top: 20px;
+}
+footer #top div h4 {
+    color: #fff;
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+footer #top div ul li a h6 {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 15px;
+}
+
+footer #bottom {
+    margin-top: 20px;
+}
+footer #bottom .top {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+footer #bottom .top .left {
+   flex: .2;
+    margin-left: 70px;
+}
+footer #bottom .top .left ul  {
+
+}
+footer #bottom .top .left ul li a {
+   
+}
+footer #bottom .top .left ul li a img {
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+}
+footer #bottom .top .right {
+    flex: .6;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+footer #bottom .top .right h4 {
+    color: #FFFFFF;
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 30px;
     text-align: center;
+}
+footer #bottom .top .right ul li {
+    
+}
+footer #bottom .top .right ul li div {
+    display: flex;
+    flex-direction: row;
+}
+footer #bottom .top .right ul li div .icon {
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+}
+footer #bottom .top .right ul li div .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+footer #bottom .top .right ul li div .text p {
+    font-size: 16px;
+}
+footer #bottom .top .right ul li div .text h6 {
+    font-size: 20px;
+    font-weight: 600;
+    position: relative;
+    top: -10px;
+}
+footer #bottom .popularcategories {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 60px;
+    border: 2px solid #636565;
+    border-left: none;
+    border-right: none;
+
+}
+footer #bottom .popularcategories h4 {
+    font-size: 28px;
+    font-weight: 700;
+    padding: 20px 0;
+}
+footer #bottom .popularcategories a img {
+    
+}
+footer #bottom .bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+}
+footer #bottom .bottom h6 {
+    font-size: 18px; 
+    font-weight: 700; 
+    color: #FFFFFF;
+}
+
+
+/* Responsive */
+@media (max-width: 1280px) {
+    footer #bottom .bottom {
+        margin-top: 30px;
+    }
+    footer #bottom .top .right {
+        flex: .8;
+    }
+    #hero {
+        height: 120vh;
+        background-position: 60% 20%;
+    }
+    #bottom ul li .description {
+        padding: 0 5px;
+    }
+}
+
+@media (max-width: 1024px) {
+    #headerContainer nav ul li a {
+        font-size: 20px;
+        margin: 0 10px;
+    }
+    #headerContainer nav ul li:last-child {
+        margin-right: 10px;
+    }
+    #headerContainer .cart ul li:first-child {
+        margin-left: 0px;
+    }
+    .searchContainer{
+        padding: 10px 15px;
+    }
+    #hero {
+        height: 120vh;
+        background-position: 60% 20%;
+    }
+    #heroContainer {
+        position: relative;
+        
+    }
+    #newArrivalContainer .bottom ul li img {
+        height: 200px;
+    }
+}
+
+@media (max-width: 768px) {
+    .toggle-button {
+        display: flex;
+    }
+    #headerContainer nav {
+        /*display: none;*/
+    }
+    .navContainer {
+        position: relative;
+    }
+    
+    .toggle-button {
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+    }
+    
+    nav {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: #fff;
+        padding: 10px;
+        border: 1px solid #ccc;
+        display: none;
+        z-index: 1;
+    }
+    
+    nav ul {
+        list-style: none;
+        padding: 0;
+    }
+    
+    nav ul li {
+        margin: 5px 0;
+    }
+    
+    nav ul li a {
+        text-decoration: none;
+        color: #333;
+    }
+    
+    .navContainer:hover nav {
+        display: block;
+    }
+    #newArrivalContainer .bottom ul li img {
+        height: 180px;
+    }
+    #heroContainer .left .container h4 {
+        font-size: 24px;
+    }
+    #heroContainer .left .container h1 {
+        font-size: 52px;
+    }
+    #newArrivalContainer h2 {
+        font-size: 28px; 
+    }
+    #newArrivalContainer .bottom ul li h4 {
+        font-size: 18px; 
+    }
+    #top h2 {
+        font-size: 28px;
+    }
+    #bottom ul li .description .left h4 {
+        font-size: 16px; 
+    }
+    #bottom ul li .description .left h6 {
+        font-size: 12px; 
+    }
+    #women #top h2 {
+        font-size: 28px;
+
+    }
+    #women #bottom ul li .description .left h4 {
+        font-size: 16px; 
+    }
+    #women #bottom ul li .description .left h6 {
+        font-size: 12px; 
+    }
+    #brandContainer .top h1 {
+        font-size: 40px;
+    }
+    #brandContainer .top h4 {
+        font-size: 16px;
+    }
+    #brandContainer .top h4 span {
+        font-size: 16px;
+    }
+    #brandContainer .bottom ul li img {
+        height: 70px;
+        width: 100px;
+        margin-right: 20px;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 12px;
+    }
+    #limeLightContainer #top h2 {
+        font-size: 28px;
+    }
+    #limeLightContainer #bottom ul li .description .left h4 {
+        font-size: 16px;
+    }
+    #limeLightContainer #bottom ul li .description .left h6 {
+        font-size: 12px; 
+    }
+    #feedbackContainer #top h2 {
+        font-size: 28px;
+    }
+    #feedbackContainer #bottom ul li {
+        flex: .35;
+        padding: 10px;
+    }
+    #feedbackContainer #bottom ul li h3 {
+        font-size: 18px;
+    }
+    #feedbackContainer #bottom ul li p {
+        font-size: 14px;
+    }
+    #feedbackContainer #bottom ul li .top .rating span img {
+        width: 15px;
+        height: 15px;
+    }
+    footer #top div h4 {
+        font-size: 22px;
+    }
+    footer #top div ul li a h6 {
+        font-size: 14px;
+    }
+    footer #bottom .top .left ul li a img {
+        width: 30px;
+        height: 30px;
+        padding: 8px;
+        border-radius: 10px;
+    }
+    footer #bottom .top .right h4 {
+        font-size: 22px;
+    }
+    footer #bottom .top .right ul li div .text p {
+        font-size: 12px;
+    }
+    footer #bottom .top .right ul li div .text h6 {
+        font-size: 16px;
+    }
+    footer #bottom .popularcategories h4 {
+        font-size: 22px;
+    }
+    footer #bottom .bottom h6 {
+        font-size: 14px;
+    }
 }
